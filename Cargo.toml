@@ -1,0 +1,15 @@
+[package]
+name = "qr_rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+qrcode-generator = "5.0.0"
+
+[[bin]]
+name = "qrs"
+path = "src/qrs.rs"
+
+[[bin]]
+name = "qrp"
+path = "src/qrp.rs"
