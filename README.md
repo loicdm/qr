@@ -17,9 +17,9 @@ Run in project root directory :
 
 - to generate a svg file :
   ```console
-  qrs text
+  qrs text image.svg
   ```
 - to generate a png file :
   ```console
-  qrp text
+  qrp text image.png
   ```
