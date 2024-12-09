@@ -39,6 +39,7 @@ jobs:
           # (required) Comma-separated list of binary names (non-extension portion of filename) to build and upload.
           # Note that glob pattern is not supported yet.
           bin: qrs,qrp
+          archive: $bin-$tag-$target
           # (optional) Target triple, default is host triple.
           # This is optional but it is recommended that this always be set to
           # clarify which target you are building for if macOS is included in
@@ -53,6 +54,6 @@ jobs:
           # [default value: windows]
           # [possible values: all, unix, windows, none]
           zip: windows
-          archive: $bin-$tag-$target
+
           # (required) GitHub token for uploading assets to GitHub Releases.
           token: ${{ secrets.GITHUB_TOKEN }}
